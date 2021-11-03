@@ -3,7 +3,7 @@ public class EjemploAutomovilEnum {
 
         Automovil.setEstanqueEstatico(35);
 
-        Automovil tesla = new Automovil("tesla", "plaid", Color.NEGRO, 2.5, 100);
+        Automovil tesla = new Automovil("tesla", "plaid", Color.NEGRO, new Motor(0,TipoMotor.ELECTRICO), new Estanque(100));
         tesla.setTipo(TipoAutomovil.HATCHBACK);
 
         TipoAutomovil tipo = tesla.getTipo();
