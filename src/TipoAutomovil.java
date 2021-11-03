@@ -6,7 +6,7 @@ public enum TipoAutomovil {
     PICK_UP("PickUp",4,"Camioneta"),
     COUPE("Coupé",2,"Auto pequeño"),
     CONVERTIBLE("Convertible",2,"Auto deportivo"),
-    FURGON("Furgón",4,"Auto utilitario");
+    FURGON("Furgón",3,"Auto utilitario");
 
     private final String nombre;
     private final int numeroPuertas;
