@@ -182,17 +182,17 @@ public class Automovil {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Automovil{" +
-                "ID= "+ id + ","+
-                "fabricante='" + fabricante + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", tipo='" + tipo.getDescripcion() + '\'' +
-                ", color='" + color.getColor() + '\'' +
-                ", cilindrada=" + motor.getCilindrada() +
-                ", estanque=" + estanque.getCapacidad() +
-                ", Color patente " + colorPatente.getColor()+
-                '}';
+    public String verDetalle(){
+        String detalle = "auto.id= " +this.id +
+                "\nauto.fabricante = " + this.fabricante +
+                "\nauto.modelo = " + this.modelo;
+
+        if(this.tipo != null){
+            detalle +="\nauto.tipo = " + this.getTipo().getDescripcion();
+        }
+                detalle += "auto.color = "+ this.color +
+                        "\nauto.patenteColor = " + colorPatente +
+                        "\nauto.cilindrada = " + this.motor.getCilindrada();
+        return detalle;
     }
 }

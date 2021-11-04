@@ -21,10 +21,10 @@ public class EjemploAutomovilStatic {
 
         Automovil.setColorPatente(Color.BLANCO);
 
-        System.out.println(navara.toString());
-        System.out.println(mazda.toString());
+        System.out.println(navara.verDetalle());
+        System.out.println(mazda.verDetalle());
         Automovil.setColorPatente(Color.NARANJA);
-        System.out.println(tesla.toString());
+        System.out.println(tesla.verDetalle());
 
         System.out.println(Automovil.calcularConsumoEstatico(300,65));
 
@@ -32,5 +32,7 @@ public class EjemploAutomovilStatic {
         System.out.println("Velocidad maxima ciudad: " + Automovil.VELOCIDAD_MAXIMA_CIUDAD);
 
         System.out.println(Automovil.getColorPatente().getColor());
+
+        System.out.println(mazda.calcularConsumo(300,70));
     }
 }
